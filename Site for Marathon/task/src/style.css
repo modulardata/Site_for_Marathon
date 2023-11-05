@@ -1,0 +1,96 @@
+body, iframe {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+
+}
+
+.iframe-container {
+}
+
+iframe {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#youtube-iframe {
+    height: 80vh;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.video-overlay h1 {
+    font-size: 73px;
+    padding-top: 150px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+.distance-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.distance-container ul {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Style the header of the list */
+.distance-container h1 {
+    font-size: 32px;
+}
+
+/* Alternate the image position on every list item */
+.distance-container li:nth-child(even) img {
+    float: left;
+}
+
+.distance-container li:nth-child(odd) img {
+    float: right;
+}
+
+/* Prevent the list items from hovering over each other */
+.distance-container li::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.distance-image {
+    width: 450px;
+    height: auto;
+    margin: 0 1em;
+    filter: saturate(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.distance-image:hover {
+    filter: saturate(200%);
+}

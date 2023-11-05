@@ -1,0 +1,17 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+node_modules
+
+# old stages
+/Site for Marathon/*
+!/Site for Marathon/task/
+/Site for Marathon/task/*
+!/Site for Marathon/task/src
